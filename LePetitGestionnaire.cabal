@@ -7,16 +7,16 @@ license-file: LICENSE
 maintainer: charles.stpierre@gmail.com
 category: Gestion de projet
 author: Charles St-Pierre
-data-files: styles.xml *.xml
+data-files: *.xml
 data-dir: rsc
 
 executable LePetitGestionnaire
-    build-depends: base >=3, gtk -any, stm -any, time -any, old-time -any,
+    build-depends: base >=3, gtk -any, stm -any, time >= 1.5,
                    containers -any, text -any, yaml -any, aeson -any, bytestring -any,
                    parallel -any, async -any,
                    transformers -any, lens -any, filepath -any,
                    directory -any, unordered-containers -any, hsql-sqlite3 -any,
-                   hsql -any, old-locale -any, MissingH
+                   hsql -any, MissingH
     main-is: Main.hs
     buildable: True
     default-language: Haskell2010
@@ -25,7 +25,7 @@ executable LePetitGestionnaire
     ghc-options: -fwarn-incomplete-patterns -fwarn-incomplete-record-updates
 
 test-suite ListeDeControle
-    build-depends: base >=3, HUnit -any, time -any, text -any,
+    build-depends: base >=3, HUnit -any, time >= 1.5, text -any,
                    bytestring -any, aeson -any, containers -any
     type: exitcode-stdio-1.0
     main-is: TestsListeDeControle.hs

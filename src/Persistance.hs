@@ -53,10 +53,7 @@ import Data.Tree
 import Data.List
 import qualified Data.Text as T
 import System.IO
-import System.Locale
-import Data.Time.LocalTime
-import Data.Time.Format
-import Data.Time.Calendar
+import Data.Time
 import Control.Monad
 import Control.Monad.Trans.Class
 import Control.Monad.Trans.Maybe
